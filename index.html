@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ANNA — Стиль. Рух. Перемога.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANNA — Хіп-Хоп Queen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Orbitron', sans-serif;
       background-color: #000;
       color: #fff;
     }
     header {
-      position: relative;
-      text-align: center;
-    }
-    header img {
-      width: 100%;
-      max-height: 600px;
-      object-fit: cover;
-      filter: brightness(0.7);
+      width: 100vw;
+      height: 100vh;
+      background: url('anna.jpg') no-repeat center center;
+      background-size: contain;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 2rem;
     }
     header h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
+      padding: 1rem 2rem;
       border-radius: 10px;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
     section {
-      padding: 40px;
+      padding: 4rem 2rem;
+      text-align: center;
     }
     h2 {
-      color: #ff2fbf;
-      text-align: center;
+      color: #ff007f;
+      margin-bottom: 1rem;
+      font-size: 2rem;
     }
-    p, .video-wrapper, .music-wrapper, .contact-links {
-      text-align: center;
+    .video-container {
+      margin: 2rem auto;
       max-width: 800px;
-      margin: auto;
     }
-    .video-wrapper video, audio {
-      width: 90%;
-      margin-top: 20px;
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
-    .contact-links a {
+    .audio-player {
+      margin: 2rem 0;
+    }
+    .link-btns a {
       display: inline-block;
-      margin: 10px;
+      margin: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #ff007f;
+      color: #fff;
       text-decoration: none;
-      color: #1da1f2;
-      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .link-btns a:hover {
+      background-color: #e60073;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="anna.jpg" alt="Anna" />
     <h1>ANNA — Стиль. Рух. Перемога.</h1>
   </header>
 
-  <section id="about">
+  <section>
     <h2>Про мене</h2>
-    <p>
-      Привіт! Я Анна — фанатка хіп-хопу, ритму та драйву. Кожен мій рух — це історія. Я виступаю, знімаю челенджі та заряджаю енергією всіх, хто дивиться. Хіп-хоп — не просто танець, це мій стиль життя!
-    </p>
+    <p>Привіт! Я Анна — фанатка хіп-хопу, ритму та драйву. Кожен мій рух — це історія. Я виступаю, знімаю челенджі та заряджаю енергією всіх, хто дивиться. Хіп-хоп — не просто танець, це мій стиль життя!</p>
   </section>
 
-  <section id="performances">
+  <section>
     <h2>Мої виступи</h2>
-    <div class="video-wrapper">
-      <video controls>
-        <source src="video/anna-performance.mp4" type="video/mp4" />
-        Ваш браузер не підтримує відео.
-      </video>
+    <div class="video-container">
+      <video src="video/anna-performance.mp4" controls></video>
     </div>
   </section>
 
-  <section id="music">
-    <h2>Хіп-Хоп Музика</h2>
-    <div class="music-wrapper">
-      <audio controls><source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mpeg"></audio>
-      <audio controls><source src="https://www.bensound.com/bensound-music/bensound-highoctane.mp3" type="audio/mpeg"></audio>
-      <audio controls><source src="https://www.bensound.com/bensound-music/bensound-energy.mp3" type="audio/mpeg"></audio>
-      <audio controls><source src="https://www.bensound.com/bensound-music/bensound-extremeaction.mp3" type="audio/mpeg"></audio>
+  <section>
+    <h2>Моя музика</h2>
+    <div class="audio-player">
+      <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mp3">
+        Ваш браузер не підтримує аудіо.
+      </audio>
+      <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-energy.mp3" type="audio/mp3">
+      </audio>
+      <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-extremeaction.mp3" type="audio/mp3">
+      </audio>
+      <audio controls>
+        <source src="https://www.bensound.com/bensound-music/bensound-retrosoul.mp3" type="audio/mp3">
+      </audio>
     </div>
   </section>
 
-  <section id="challenges">
+  <section>
     <h2>Мої челенджи в Instagram</h2>
-    <div class="contact-links">
-      <a href="https://www.instagram.com/finksii_w/" target="_blank">Перейти в Instagram</a>
+    <div class="link-btns">
+      <a href="https://www.instagram.com/finksii_w/" target="_blank">Instagram</a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Зв’язок</h2>
-    <div class="contact-links">
+  <section>
+    <h2>Зв'язок</h2>
+    <div class="link-btns">
       <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
     </div>
   </section>
