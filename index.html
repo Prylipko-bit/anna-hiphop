@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
   <title>Anna Hip-Hop Vibes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Press Start 2P', cursive;
+      font-family: 'Orbitron', sans-serif;
       background: #0f0f0f;
       color: #fff;
       text-align: center;
-      background-image: url('https://i.imgur.com/g1kR3Yo.jpeg');
+      background-image: url('anna.jpg');
       background-size: cover;
       background-position: center;
       backdrop-filter: blur(3px);
@@ -25,109 +25,76 @@
       border-radius: 15px;
     }
     h1 {
-      font-size: 2rem;
-      color: #ff33cc;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-    p {
-      font-size: 1rem;
-      margin: 1rem 0;
-    }
-    iframe, video {
-      width: 90%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-      margin: 1rem 0;
-    }
-    .btn {
-      background: #ff33cc;
-      color: #fff;
-      padding: 0.7rem 1.5rem;
+    .social-links a {
+      color: #1db954;
       text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    .gallery video, .gallery img {
+      max-width: 100%;
+      margin-top: 1rem;
       border-radius: 10px;
-      display: inline-block;
+    }
+    .feedback form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
       margin-top: 1rem;
     }
-    .music, .gallery, .challenges, .contact {
-      margin-top: 2rem;
-    }
-    .profile-pic {
-      width: 90%;
-      max-width: 500px;
-      border-radius: 20px;
-      margin-top: 2rem;
-      box-shadow: 0 0 25px #ff33cc;
-    }
-    input, textarea {
-      padding: 0.5rem;
-      width: 80%;
-      margin: 0.5rem 0;
-      border-radius: 5px;
+    .feedback input, .feedback textarea, .feedback button {
+      padding: 0.8rem;
+      border-radius: 8px;
       border: none;
+      font-family: inherit;
     }
-    button {
-      background: #ff33cc;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
+    .feedback button {
+      background-color: #1db954;
+      color: #fff;
+      font-weight: bold;
       cursor: pointer;
     }
-    .social {
-      margin-top: 2rem;
-    }
-    .social a {
-      color: #ff33cc;
-      margin: 0 1rem;
-      text-decoration: none;
+    audio {
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Anna's Hip-Hop World 💥</h1>
-    <img src="https://raw.githubusercontent.com/prylipko-bit/anna-hiphop/main/anna.jpg" alt="Anna Hip-Hop" class="profile-pic">
+    <h1>🎤 Anna — Хіп-Хоп Queen</h1>
+    <p>Виступи, стиль, ритм — усе в одному флоу 🕶️</p>
 
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/l-tRCEYA8Mg" allowfullscreen></iframe>
-    </div>
-
-    <div class="challenges">
-      <h2>#МоїЧеленджі</h2>
-      <p>🔹 Повтори рухи 👇 <br>
-      <a class="btn" href="https://tiktok.com/@anna_dance" target="_blank">TikTok профіль</a></p>
-    </div>
-
-    <div class="music">
-      <h2>🎵 Мій топ хіт</h2>
-      <iframe src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-
-    <div class="gallery">
-      <h2>📸 Галерея виступів</h2>
-      <video controls>
-        <source src="video/anna-performance.mp4" type="video/mp4">
-        Ваш браузер не підтримує відтворення відео.
-      </video>
-    </div>
-
-    <div class="contact">
-      <h2>💬 Зворотній зв'язок</h2>
-      <form action="https://formspree.io/f/mnqeyrgg" method="POST">
-        <input type="text" name="name" placeholder="Ваше ім’я" required><br>
-        <input type="email" name="email" placeholder="Ваш email" required><br>
-        <textarea name="message" placeholder="Ваше повідомлення" rows="4" required></textarea><br>
-        <button type="submit">Надіслати</button>
-      </form>
-    </div>
-
-    <div class="social">
-      <h2>🔗 Соцмережі</h2>
+    <div class="social-links">
       <a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank">Instagram</a>
       <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
+      <a href="https://www.tiktok.com/@roblox_anya21" target="_blank">TikTok</a>
     </div>
 
-    <p style="margin-top: 3rem; font-size: 0.8rem; color: #aaa">© 2025 Anna Dance Vibes | створено з любов’ю 💖</p>
+    <h2>🎧 Мій топ хіт</h2>
+    <audio controls>
+      <source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mpeg">
+      Ваш браузер не підтримує аудіо.
+    </audio>
+
+    <h2>🎥 Галерея</h2>
+    <div class="gallery">
+      <video src="video/anna-performance.mp4" controls></video>
+    </div>
+
+    <h2>📬 Зворотній зв’язок</h2>
+    <div class="feedback">
+      <form action="https://formsubmit.co/a0992667037@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Ім’я" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+      <p><small>*Повідомлення надсилаються на пошту a0992667037@gmail.com</small></p>
+    </div>
   </div>
 </body>
 </html>
