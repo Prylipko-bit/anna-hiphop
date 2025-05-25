@@ -4,97 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <title>Anna Hip-Hop Vibes</title>
+  <title>Anna Hip-Hop Queen</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background: #0f0f0f;
+      background: #000;
       color: #fff;
       text-align: center;
-      background-image: url('anna.jpg');
-      background-size: cover;
-      background-position: center;
-      backdrop-filter: blur(3px);
     }
-    .container {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 2rem;
-      margin: 2rem;
-      border-radius: 15px;
+    header {
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      max-width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #f0f;
+      margin-bottom: 1rem;
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      margin: 0.5rem 0;
     }
-    .social-links a {
-      color: #1db954;
+    .subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    .links a {
+      color: #00ff88;
+      margin: 0 10px;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
     }
-    .gallery video, .gallery img {
-      max-width: 100%;
-      margin-top: 1rem;
-      border-radius: 10px;
+    section {
+      margin-top: 2rem;
     }
-    .feedback form {
+    .gallery video {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+    form {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 0.5rem;
-      margin-top: 1rem;
+      max-width: 400px;
+      margin: 2rem auto;
     }
-    .feedback input, .feedback textarea, .feedback button {
-      padding: 0.8rem;
+    input, textarea, button {
+      width: 100%;
+      padding: 0.7rem;
       border-radius: 8px;
       border: none;
-      font-family: inherit;
+      font-size: 1rem;
     }
-    .feedback button {
-      background-color: #1db954;
+    button {
+      background: #ff00cc;
       color: #fff;
-      font-weight: bold;
       cursor: pointer;
     }
-    audio {
-      margin-top: 1rem;
+    footer {
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
+    <img src="anna.jpg" alt="Anna">
     <h1>🎤 Anna — Хіп-Хоп Queen</h1>
-    <p>Виступи, стиль, ритм — усе в одному флоу 🕶️</p>
-
-    <div class="social-links">
+    <p class="subtitle">Виступи, стиль і челенджі 🔥</p>
+    <div class="links">
       <a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank">Instagram</a>
       <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
       <a href="https://www.tiktok.com/@roblox_anya21" target="_blank">TikTok</a>
     </div>
+  </header>
 
-    <h2>🎧 Мій топ хіт</h2>
-    <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mpeg">
-      Ваш браузер не підтримує аудіо.
-    </audio>
-
-    <h2>🎥 Галерея</h2>
+  <section>
+    <h2>📽️ Галерея</h2>
     <div class="gallery">
       <video src="video/anna-performance.mp4" controls></video>
     </div>
+  </section>
 
-    <h2>📬 Зворотній зв’язок</h2>
-    <div class="feedback">
-      <form action="https://formsubmit.co/a0992667037@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Ім’я" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
-        <button type="submit">Надіслати</button>
-      </form>
-      <p><small>*Повідомлення надсилаються на пошту a0992667037@gmail.com</small></p>
+  <section>
+    <h2>🎯 Мої челенджі</h2>
+    <p>Дивись найсвіжіші челенджі у TikTok, Instagram та Telegram</p>
+    <div class="links">
+      <a href="https://www.tiktok.com/@roblox_anya21" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank">Instagram</a>
+      <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <h2>📩 Зворотний звʼязок</h2>
+    <form action="https://formsubmit.co/a0992667037@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Імʼя" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; Anna Hip-Hop Queen 2025
+  </footer>
 </body>
 </html>
