@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ANNA — Стиль. Рух. Перемога.</title>
+  <title>Anna — Хіп-Хоп</title>
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <style>
     body {
@@ -13,44 +13,57 @@
       color: #fff;
     }
     header {
-      background: url('anna.jpg') no-repeat center top;
+      background: url("anna.jpg") no-repeat center top;
       background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 320px 20px 100px;
-      font-size: 3em;
-      color: #fff;
-      text-shadow: 3px 3px 6px #000;
+    }
+    header h1 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
     }
     section {
-      padding: 40px 20px;
+      padding: 3rem 1rem;
       max-width: 900px;
       margin: auto;
     }
     h2 {
-      color: #ff1493;
-      font-size: 2em;
+      color: #ff0080;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    video, audio {
-      width: 100%;
-      margin-top: 10px;
-    }
-    .socials {
+    .video-container, .audio-container {
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-      padding-bottom: 60px;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
     }
-    .socials a {
-      color: #1da1f2;
-      font-size: 1.5em;
+    .audio-container audio {
+      width: 100%;
+    }
+    .centered {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+    }
+    footer a {
+      color: #00ffff;
       text-decoration: none;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    ANNA — Стиль. Рух. Перемога.
+    <h1>ANNA — Стиль. Рух. Перемога.</h1>
   </header>
 
   <section>
@@ -60,36 +73,36 @@
 
   <section>
     <h2>Мої виступи</h2>
-    <video src="video/anna-performance.mp4" controls></video>
-  </section>
-
-  <section>
-    <h2>Танцювальні хіти</h2>
-    <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-hipjazz.mp3" type="audio/mpeg">
-    </audio>
-    <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-badass.mp3" type="audio/mpeg">
-    </audio>
-    <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-extremeaction.mp3" type="audio/mpeg">
-    </audio>
-    <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mpeg">
-    </audio>
-  </section>
-
-  <section>
-    <h2>Мої челенджи в Instagram</h2>
-    <p><a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank" style="color:#ff1493;">Дивитися челенджи</a></p>
-  </section>
-
-  <section>
-    <h2>Зв'язок</h2>
-    <div class="socials">
-      <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
+    <div class="video-container">
+      <video controls width="100%">
+        <source src="video/anna-performance.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+      </video>
     </div>
   </section>
 
+  <section class="centered">
+    <h2>Мої челенджи в Instagram</h2>
+    <p><a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank">@finksii_w</a></p>
+  </section>
+
+  <section>
+    <h2>🎧 Танцювальні хіп-хоп треки</h2>
+    <div class="audio-container">
+      <audio controls><source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Gillicuddy/Plays_Guitar/Gillicuddy_-_05_-_Springish.mp3" type="audio/mpeg"></audio>
+      <audio controls><source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Podington_Bear/Rhythms/Podington_Bear_-_04_-_Big_Man.mp3" type="audio/mpeg"></audio>
+      <audio controls><source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes/Music_for_TV__Film/Scott_Holmes_-_06_-_Upbeat_Party.mp3" type="audio/mpeg"></audio>
+      <audio controls><source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/Its_time_for_adventure/Komiku_-_08_-_Funky_Jungle.mp3" type="audio/mpeg"></audio>
+    </div>
+  </section>
+
+  <section class="centered">
+    <h2>Звʼязок</h2>
+    <p><a href="https://t.me/finksi_w" target="_blank">Написати в Telegram</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Anna Hip-Hop. Усі права захищені.</p>
+  </footer>
 </body>
 </html>
