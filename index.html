@@ -3,123 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna — Стиль. Рух. Перемога.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <title>ANNA — Стиль. Рух. Перемога.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Russo One', sans-serif;
       background-color: #000;
       color: #fff;
     }
     header {
       background: url('anna.jpg') no-repeat center top;
-      background-size: contain;
-      height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding-bottom: 2rem;
+      background-size: cover;
       text-align: center;
-    }
-    header h1 {
-      font-size: 2.8rem;
+      padding: 320px 20px 100px;
+      font-size: 3em;
       color: #fff;
-      text-shadow: 2px 2px 4px #000;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 0.5em 1em;
-      border-radius: 10px;
+      text-shadow: 3px 3px 6px #000;
     }
     section {
-      padding: 3rem 2rem;
-      background-color: #111;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
       color: #ff1493;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .about, .performances, .music, .footer {
-      max-width: 800px;
-      margin: auto;
+      font-size: 2em;
     }
     video, audio {
       width: 100%;
-      margin-top: 1rem;
-      border-radius: 10px;
+      margin-top: 10px;
     }
-    .footer {
-      background: #000;
-      padding: 2rem;
-      text-align: center;
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      padding-bottom: 60px;
     }
-    .footer a {
-      color: #0f0;
-      margin: 0 1rem;
+    .socials a {
+      color: #1da1f2;
+      font-size: 1.5em;
       text-decoration: none;
-      font-size: 1.2rem;
-    }
-    .tiktok-link {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .tiktok-link a {
-      background: #ff1493;
-      color: #fff;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      display: inline-block;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>ANNA — Стиль. Рух. Перемога.</h1>
+    ANNA — Стиль. Рух. Перемога.
   </header>
 
-  <section class="about">
+  <section>
     <h2>Про мене</h2>
     <p>Привіт! Я Анна — фанатка хіп-хопу, ритму та драйву. Кожен мій рух — це історія. Я виступаю, знімаю челенджі та заряджаю енергією всіх, хто дивиться. Хіп-хоп — не просто танець, це мій стиль життя!</p>
   </section>
 
-  <section class="performances">
+  <section>
     <h2>Мої виступи</h2>
-    <video controls>
-      <source src="video/anna-performance.mp4" type="video/mp4">
-      Ваш браузер не підтримує відео.
-    </video>
+    <video src="video/anna-performance.mp4" controls></video>
   </section>
 
-  <section class="music">
+  <section>
     <h2>Танцювальні хіти</h2>
     <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mpeg">
-      Ваш браузер не підтримує аудіо.
+      <source src="https://www.bensound.com/bensound-music/bensound-hipjazz.mp3" type="audio/mpeg">
     </audio>
     <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-energy.mp3" type="audio/mpeg">
-      Ваш браузер не підтримує аудіо.
-    </audio>
-    <audio controls>
-      <source src="https://www.bensound.com/bensound-music/bensound-highoctane.mp3" type="audio/mpeg">
-      Ваш браузер не підтримує аудіо.
+      <source src="https://www.bensound.com/bensound-music/bensound-badass.mp3" type="audio/mpeg">
     </audio>
     <audio controls>
       <source src="https://www.bensound.com/bensound-music/bensound-extremeaction.mp3" type="audio/mpeg">
-      Ваш браузер не підтримує аудіо.
+    </audio>
+    <audio controls>
+      <source src="https://www.bensound.com/bensound-music/bensound-dubstep.mp3" type="audio/mpeg">
     </audio>
   </section>
 
-  <section class="tiktok-link">
-    <a href="https://www.tiktok.com/@roblox_anya21" target="_blank">Мої челенджі в TikTok</a>
+  <section>
+    <h2>Мої челенджи в Instagram</h2>
+    <p><a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank" style="color:#ff1493;">Дивитися челенджи</a></p>
   </section>
 
-  <footer class="footer">
-    <p>Зв'язок:</p>
-    <a href="https://www.instagram.com/finksii_w/?locale=ru" target="_blank">Instagram</a>
-    <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
-  </footer>
+  <section>
+    <h2>Зв'язок</h2>
+    <div class="socials">
+      <a href="https://t.me/finksi_w" target="_blank">Telegram</a>
+    </div>
+  </section>
+
 </body>
 </html>
